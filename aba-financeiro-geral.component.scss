@@ -1,0 +1,71 @@
+@use "./../../../../../../src/cores.scss" as *;
+
+.altura {
+  height: 9vh;
+  display: flex;
+}
+
+.tabelaregistros > app-datagrid ::ng-deep td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
+.paperclip {
+  max-width: 80%;
+  transition: max-width 0.5s ease;
+}
+
+.paperclip:hover{
+  max-width: 100%;
+}
+
+.text-secondary-dark {
+  color: $oab;
+}
+
+.fs-0 {
+  font-size: 12px;
+}
+
+.fs-10 {
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+.registros {
+  background-color: $oab;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+}
+
+.tabelaregistros ::ng-deep button.botaoPesquisar, .tabelaregistros ::ng-deep button.funnelbutton {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.bi-exclamation-circle-fill {
+  cursor: pointer;
+}
+.box {
+  position: absolute;
+  margin-top: -8%;
+  margin-left: -8%;
+  text-align: start;
+  width: 200px;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  &.show {
+    opacity: 1;
+  }
+}
+
+.w-100{
+  width: 100%;
+}
